@@ -1,0 +1,11 @@
+{
+  "name": "coursera-angularjs",
+  "version": "1.0.0",
+  "description": "Coursera Test",
+  "main": "index.js",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "Ngai Tai",
+  "license": "ISC"
+}
