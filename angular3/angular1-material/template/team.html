@@ -1,0 +1,13 @@
+<div>
+    <h1>Teams</h1>
+    <ul>
+        <li ng-repeat="team in teams | orderBy:'name'" ng-click="setFave(team)" ng-class="{fave: team.team===fave}">
+            <div>{{team.location}} {{team.name}}</div>
+            <div>{{team.w}}</div>
+            <div>{{team.l}}</div>
+            <div>{{team.t}}</div>
+            <div>{{team.pf}}</div>
+            <div>{{team.pa}}</div>
+        </li>
+    </ul>
+</div>

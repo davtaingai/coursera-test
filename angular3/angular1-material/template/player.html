@@ -1,0 +1,17 @@
+<div>
+    <h1>
+        <span ng-click="setView('player')" >Players</span>
+        <span ng-click="setView('stadium')" class="view">Stadium</span>
+    </h1>
+    <ul>
+        <li ng-repeat="player in players | filter:{ team: fave } | orderBy:'-pos'">
+            <div>{{player.name}}</div>
+            <div>{{player.nbr}}</div>
+            <div>{{player.pos}}</div>
+            <div>{{player.age}}</div>
+            <div>{{player.ht}}</div>
+            <div>{{player.wt}}</div>
+            <div>{{player.exp}}</div>
+        </li>
+    </ul>
+</div>

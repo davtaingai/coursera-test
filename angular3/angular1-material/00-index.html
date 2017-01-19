@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<link href="image/nfl.png" rel="shortcut icon" type="image/x-icon" /> <!-- Show icon on the tab -->
+
+<link href="style/site.css" rel="stylesheet" />
+
+<script src="script/angular.min.js"></script>
+<script src="script/angular-route.min.js"></script>
+
+<body ng-app="myApp" >
+
+    <header>
+        <div>National Football League</div>
+        <div>2016-2017</div>
+    </header>
+
+    <section>
+        <nav>
+            <button><a href="#/">Home</a></button>
+            <button><a href="#/teams">Teams</a></button>
+            <button><a href="#/standings">Standings</a></button>
+            <button><a href="#/players">Players</a></button>
+        </nav>
+        <content ng-view></content>    <!-- change the route. Single page solution key -->
+    </section>
+
+    <footer>
+        <div>philly.NET Labs - Angular Code</div>
+    </footer>
+
+	<script src="script/app.js"></script>
+	<script src="script/controller.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "angular1-material",
+  "version": "1.0.0",
+  "description": "philly.net material design lab",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "author": "Bill Wolff",
+  "license": "ISC"
+}

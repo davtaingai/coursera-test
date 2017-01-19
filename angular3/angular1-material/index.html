@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Set device size for phone and tablet support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="image/nfl.png" rel="shortcut icon" type="image/x-icon" />
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="style/angular-material.min.css">
+    <!-- Roboto font style sheet -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Material icons style sheet -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Your custom style sheet -->
+    <link href="style/site.css" rel="stylesheet" />
+</head>
+
+<body ng-app="myApp" ng-cloak layout="column" ng-controller="myCtrl">
+
+    <md-toolbar layout="row">
+        <md-button flex="10" ng-click="toggleList()" hide-gt-sm>
+            <md-icon>menu</md-icon>
+        </md-button>
+        <div flex="75" layout layout-align="center center">
+            <h1 hide-sm hide-xs>National Football League</h1>
+            <h1 hide-gt-sm>NFL</h1>
+        </div>
+        <div flex="15" layout layout-align="center center">
+            <img src="image/nfl.png">
+        </div>
+    </md-toolbar>
+    <div layout="row" flex>
+        <md-sidenav md-is-locked-open="$mdMedia('gt-sm')" md-component-id="left"
+            class="md-padding md-whiteframe-8dp"> 
+            <md-list ng-click="toggleList()">
+                <md-list-item ng-repeat="team in teams">
+                    <md-button layout="row" ng-click="selectTeam(team)">
+                        <img ng-srcset="image/logo/{{team.team}}.png" flex="20">
+                        <span class="md-padding">{{team.location}} {{team.name}}</span>
+                    </md-button>
+                </md-list-item>
+            </md-list>
+        </md-sidenav>
+        <md-content flex class="md-padding" id="content"> 
+            <div layout="row" layout-align="space-between">
+                <h1 >{{team.location}} {{team.name}}</h1>
+                <img ng-srcset="image/logo/{{team.team}}.png" height="100px">
+                <md-button md-no-ink aria-label="Share" ng-click="share(team)">
+                    <md-icon>share</md-icon>
+                </md-button>
+            </div>
+            <h3>{{team.conference}}   {{team.w}}-{{team.l}}-{{team.t}}</h3>
+            <md-divider></md-divider>
+            <br/>
+            <div>{{team.stadium}}</div>
+            <br/>
+            <div>Capacity: {{team.capacity}}</div>
+            <br/>
+            <div>{{team.address}}</div>
+            <div>{{team.city}}, {{team.state}} {{team.zip}}</div>
+            <br/>
+            <div layout="row" layout-align="space-between">
+                <img ng-srcset="image/stadium/{{team.team}}.jpg" height="200px">
+                <img ng-srcset="image/seating/{{team.team}}.png" height="200px">
+            </div>
+        </md-content>
+        </div>
+        <footer layout layout-align="center center" class="md-caption">
+            <div>philly.NET Labs - Angular Material</div>
+        </footer>
+
+<!-- Angular Material requires Angular.js Libraries -->
+<script src="script/angular.min.js"></script>
+<script src="script/angular-animate.min.js"></script>
+<script src="script/angular-aria.min.js"></script>
+<script src="script/angular-messages.min.js"></script>
+
+<!-- Angular Material Library -->
+<script src="script/angular-material.min.js"></script>
+
+<!-- Your custom code -->
+<script src="script/app.js"></script>
+<script src="script/controller.js"></script>
+
+</body>
+
+</html>

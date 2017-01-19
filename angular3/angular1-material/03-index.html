@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <!-- Set device size for phone and tablet support -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="image/nfl.png" rel="shortcut icon" type="image/x-icon" />
+    <!-- Angular Material style sheet -->
+    <link rel="stylesheet" href="style/angular-material.min.css">
+    <!-- Roboto font style sheet -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- Material icons style sheet -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Your custom style sheet -->
+    <link href="style/site.css" rel="stylesheet" />
+</head>
+
+<body ng-app="myApp" ng-cloak layout="column">
+
+    <md-toolbar layout="row">
+        <div flex="85" layout layout-align="center center">
+            <h1>National Football League</h1>
+        </div>
+        <div flex="15" layout layout-align="center center">
+            <img src="image/nfl.png">
+        </div>
+    </md-toolbar>
+    <div layout="row" flex>
+        <md-sidenav md-is-locked-open="true" style="background-color:lightblue;"> 
+            team list
+        </md-sidenav>
+        <md-content style="background-color:lightgreen;" flex> 
+            team content
+        </md-content>
+        </div>
+        <footer style="background-color:yellow;" layout layout-align="center center">
+            <div>philly.NET Labs - Angular Material</div>
+        </footer>
+
+<!-- Angular Material requires Angular.js Libraries -->
+<script src="script/angular.min.js"></script>
+<script src="script/angular-animate.min.js"></script>
+<script src="script/angular-aria.min.js"></script>
+<script src="script/angular-messages.min.js"></script>
+
+<!-- Angular Material Library -->
+<script src="script/angular-material.min.js"></script>
+
+<!-- Your custom code -->
+<script src="script/app.js"></script>
+<script src="script/controller.js"></script>
+
+</body>
+
+</html>

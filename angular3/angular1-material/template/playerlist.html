@@ -1,0 +1,14 @@
+Team: <input ng-model="myTeam" /> Position: <input ng-model="myPos" />
+<ul>
+    <li ng-repeat="player in players | filter:{ pos: myPos, team: myTeam } | orderBy:'name'">
+        <div>{{player.name}}</div>
+        <div>{{player.team}}</div>
+        <div>{{player.nbr}}</div>
+        <div>{{player.pos}}</div>
+        <div>{{player.age}}</div>
+        <div>{{player.ht}}</div>
+        <div>{{player.wt}}</div>
+        <div>{{player.exp}}</div>
+        <div>{{player.college}}</div>
+    </li>
+</ul>

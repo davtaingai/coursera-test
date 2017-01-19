@@ -1,0 +1,116 @@
+<div>
+    <h1>American Football Conference</h1>
+    <h4>AFC East</h4>
+    <ul>
+        <li ng-repeat="team in teams | filter:{conference:'AFC EAST'} | orderBy:'-w'" 
+            ng-class="{fave: team.team===fave}">
+            <div>{{team.location}} {{team.name}}</div>
+            <div>{{team.w}}</div>
+            <div>{{team.l}}</div>
+            <div>{{team.t}}</div>
+            <div>{{team.pf}}</div>
+            <div>{{team.pa}}</div>
+            <div>{{team.str}}</div>
+            <div>{{team | distance:this }}</div>
+        </li>
+    </ul>
+    <h4>AFC North</h4>
+    <ul>
+        <li ng-repeat="team in teams | filter:{conference:'AFC NORTH'} | orderBy:'-w'" 
+            ng-class="{fave: team.team===fave}">
+            <div>{{team.location}} {{team.name}}</div>
+            <div>{{team.w}}</div>
+            <div>{{team.l}}</div>
+            <div>{{team.t}}</div>
+            <div>{{team.pf}}</div>
+            <div>{{team.pa}}</div>
+            <div>{{team.str}}</div>
+            <div>{{team | distance:this }}</div>
+        </li>
+    </ul>
+    <h4>AFC South</h4>
+    <ul>
+        <li ng-repeat="team in teams | filter:{conference:'AFC SOUTH'} | orderBy:'-w'" 
+            ng-class="{fave: team.team===fave}">
+            <div>{{team.location}} {{team.name}}</div>
+            <div>{{team.w}}</div>
+            <div>{{team.l}}</div>
+            <div>{{team.t}}</div>
+            <div>{{team.pf}}</div>
+            <div>{{team.pa}}</div>
+            <div>{{team.str}}</div>
+            <div>{{team | distance:this }}</div>
+        </li>
+    </ul>
+    <h4>AFC West</h4>
+    <ul>
+        <li ng-repeat="team in teams | filter:{conference:'AFC WEST'} | orderBy:'-w'" 
+            ng-class="{fave: team.team===fave}">
+            <div>{{team.location}} {{team.name}}</div>
+            <div>{{team.w}}</div>
+            <div>{{team.l}}</div>
+            <div>{{team.t}}</div>
+            <div>{{team.pf}}</div>
+            <div>{{team.pa}}</div>
+            <div>{{team.str}}</div>
+            <div>{{team | distance:this }}</div>
+        </li>
+    </ul>
+    <h1>National Football Conference</h1>
+    <h4>NFC East</h4>
+    <ul>
+        <li ng-repeat="team in teams | filter:{conference:'NFC EAST'} | orderBy:'-w'" 
+            ng-class="{fave: team.team===fave}">
+            <div>{{team.location}} {{team.name}}</div>
+            <div>{{team.w}}</div>
+            <div>{{team.l}}</div>
+            <div>{{team.t}}</div>
+            <div>{{team.pf}}</div>
+            <div>{{team.pa}}</div>
+            <div>{{team.str}}</div>
+            <div>{{team | distance:this }}</div>
+        </li>
+    </ul>
+    <h4>NFC North</h4>
+    <ul>
+        <li ng-repeat="team in teams | filter:{conference:'NFC NORTH'} | orderBy:'-w'" 
+            ng-class="{fave: team.team===fave}">
+            <div>{{team.location}} {{team.name}}</div>
+            <div>{{team.w}}</div>
+            <div>{{team.l}}</div>
+            <div>{{team.t}}</div>
+            <div>{{team.pf}}</div>
+            <div>{{team.pa}}</div>
+            <div>{{team.str}}</div>
+            <div>{{team | distance:this }}</div>
+        </li>
+    </ul>
+    <h4>NFC South</h4>
+    <ul>
+        <li ng-repeat="team in teams | filter:{conference:'NFC SOUTH'} | orderBy:'-w'" 
+            ng-class="{fave: team.team===fave}">
+            <div>{{team.location}} {{team.name}}</div>
+            <div>{{team.w}}</div>
+            <div>{{team.l}}</div>
+            <div>{{team.t}}</div>
+            <div>{{team.pf}}</div>
+            <div>{{team.pa}}</div>
+            <div>{{team.str}}</div>
+            <div>{{team | distance:this }}</div>
+        </li>
+    </ul>
+    <h4>NFC West</h4>
+    <ul>
+        <li ng-repeat="team in teams | filter:{conference:'NFC WEST'} | orderBy:'-w'" 
+            ng-class="{fave: team.team===fave}">
+            <div>{{team.location}} {{team.name}}</div>
+            <div>{{team.w}}</div>
+            <div>{{team.l}}</div>
+            <div>{{team.t}}</div>
+            <div>{{team.pf}}</div>
+            <div>{{team.pa}}</div>
+            <div>{{team.str}}</div>
+            <div>{{team | distance:this }}</div>
+        </li>
+    </ul>
+</div>

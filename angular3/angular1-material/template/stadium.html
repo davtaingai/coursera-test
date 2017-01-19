@@ -1,0 +1,16 @@
+<div>
+    <h1>
+        <span ng-click="setView('player')" class="view">Players</span>
+        <span ng-click="setView('stadium')">Stadium</span>
+    </h1>
+    <div>
+        <div>Conference: {{team.conference}}</div>
+        <div>Stadium: {{team.stadium}}</div>
+        <div>Capacity: {{team.capacity}}</div>
+        <div>{{team.address}}</div>
+        <div>{{team.city}}, {{team.state}} {{team.zip}}</div>
+        <img ng-srcset="image/logo/{{fave}}.png">
+        <img ng-srcset="image/stadium/{{fave}}.jpg" width="300">
+        <img ng-srcset="image/seating/{{fave}}.png" width="300">
+    </div>
+</div>
